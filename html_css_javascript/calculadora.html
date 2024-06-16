@@ -1,0 +1,52 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css"/>
+    <script type="text/javascript" src="./style/script.js"></script>
+    <title> Bem vindo! </title>
+</head>
+<body class="principal">
+    <div class="barraTitulo">
+        <h1>Sobre mim - Rodrigo Peres</h1>
+    </div>
+      <div class="calculadora">
+        <h1>Calculadora</h1>
+        <input type="text" id="valor">
+        <form action="calculadora" method="GET">
+            <div class="separador">  
+              <div class="numeros">
+                <button type="button" onclick="obterValor(1)" >1</button>
+                <button type="button" onclick="obterValor(2)">2</button>
+                <button type="button" onclick="obterValor(3)">3</button>
+              </div>
+              <div class="numeros">
+                <button type="button" onclick="obterValor(4)">4</button>
+                <button type="button" onclick="obterValor(5)">5</button>
+                <button type="button" onclick="obterValor(6)">6</button>
+              </div>
+              <div class="numeros">
+                <button type="button" onclick="obterValor(7)">7</button>
+                <button type="button" onclick="obterValor(8)">8</button>
+                <button type="button" onclick="obterValor(9)">9</button>
+              </div>
+              <div class="numeros">
+                <button class="zero" type="button" onclick="obterValor(0)">0</button>
+              </div>
+              <div class="operações">
+                <button type="button" onclick="obterValor(' + ')">+</button>
+                <button type="button" onclick="obterValor(' - ')">-</button>
+                <button type="button" onclick="obterValor(' * ')">x</button>
+                <button type="button" onclick="obterValor(' / ')">/</button>
+              </div>
+            </div>
+              <div class="operações">
+                <button type="button" onclick="calcular()">=</button>
+              </div>   
+        </div>           
+        </form> 
+      </div>
+    </div>
+
+  
+</body>
+</html>
