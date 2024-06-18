@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css"/>
+    <script type="text/javascript" src="./style/script.js"></script>
+    <title> Bem vindo! </title>
+</head>
+<body class="principal">
+  <h1>Calculadora</h1>
+  <div class="calculadora">
+        <form>
+            <input type="text" id="valor">
+            <button type="button" class="operador" onclick="apagarValor()"><=</button>
+              <div class="botoes">
+                <button type="button" onclick="obterValor(1)" >1</button>
+                <button type="button" onclick="obterValor(2)">2</button>
+                <button type="button" onclick="obterValor(3)">3</button>
+                <button type="button" class="operador" onclick="obterValor(' + ')">+</button>
+              </div>
+              <div class="botoes">
+                <button type="button" onclick="obterValor(4)">4</button>
+                <button type="button" onclick="obterValor(5)">5</button>
+                <button type="button" onclick="obterValor(6)">6</button>
+                <button type="button" class="operador" onclick="obterValor(' - ')">-</button>
+                
+              </div>
+              <div class="botoes">
+                <button type="button" onclick="obterValor(7)">7</button>
+                <button type="button" onclick="obterValor(8)">8</button>
+                <button type="button" onclick="obterValor(9)">9</button>
+                <button type="button" class="operador" onclick="obterValor(' * ')">*</button>
+              </div>
+              <div class="botoes">
+                <button class="zero" type="button" onclick="obterValor(0)">0</button>
+                <button type="button" onclick="limpar()">Reset</button>
+                <button type="button" class="operador" onclick="calcular()">=</button>
+                <button type="button" class="operador" onclick="obterValor(' / ')">/</button>
+              </div>      
+        </form> 
+      </div>
+
+  
+</body>
+</html>
